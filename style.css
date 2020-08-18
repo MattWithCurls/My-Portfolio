@@ -46,10 +46,12 @@ nav ul li a{
 .content{
     padding-top:100px;
     background-image: url("slide5.jpg");
+    background-attachment: fixed;
     background-size:100%;
     background-repeat: no-repeat;
     min-height:325px;
-    position: relative;
+    position: relative; 
+    
 }
 .text-block {
     position: absolute;
@@ -110,4 +112,6 @@ nav ul li a{
     clear: both;
     display: table;
   }
+
+  
 
