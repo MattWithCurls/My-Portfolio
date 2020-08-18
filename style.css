@@ -67,12 +67,14 @@ nav ul li a{
   } */
 
   .side{
-    padding-left: 200px;
-    font-size: 400%;
+    padding-left: 15px;
+    font-size: 300%;
   }
 
   .about-me p {
     align-items: flex-start;
+    padding-left: -1px;
+    font-stretch: expanded;
   }
 
   section {
@@ -93,5 +95,19 @@ nav ul li a{
     float: left;
      padding: 20px; 
     border: 2px;
+  }
+
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
