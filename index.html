@@ -1,114 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav-right {
-  float: right;
-}
-
-.content{
-    padding-top:100px;
-    background-image: url("slide5.jpg");
-    background-size:100%;
-    background-repeat: no-repeat;
-    min-height:325px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-</style>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+      <label class="logo">Lyhn Lee</label>
+      <ul>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact Me</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
+    </nav>
 
-<div class="topnav">
-
-  <a class="active" href="#home">Home</a>
-  <div class="topnav-right">
-    <a href="#search">About Me</a>
-    <a href="#about">Work</a>
-    <a href="#search">Contact Me</a>
-    <a href="#about">Resume</a>
-  </div>
-</div>
-
-<div class="content">
-        <p>Subtitle</p>
+    <div class="content">
+      <div class="text-block">
+        <p>Cool Subtitle here!</p>
+      </div>
     </div>
-</div>
 
-<div style="padding-left:16px">
-  <h2>About Me</h2>
-  <p>Some content..</p>
-</div>
+    <section class="about-me">
+      <div class="float-container">
+        <div class="float-child">
+          <h1 class="side">About <br/> Me</h1>
+        </div>
+        <div class="float-child">
+          <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, cupiditate, ipsam tempora et maiores minima 
+          officiis velit fugiat dolorem recusandae magni blanditiis enim praesentium quas a iure rerum? Saepe, tempora!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, cupiditate, ipsam tempora et maiores minima 
+          officiis velit fugiat dolorem recusandae magni blanditiis enim praesentium quas a iure rerum? Saepe, tempora!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, cupiditate, ipsam tempora et maiores minima 
+          officiis velit fugiat dolorem recusandae magni blanditiis enim praesentium quas a iure rerum? Saepe, tempora!
+          </p> <br />
+          <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et soluta iusto ullam sapiente nobis. Repudiandae,
+           consequuntur dolorem! Quia quos repellat, quidem eligendi quo nulla corporis nostrum! Architecto, hic quae!
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, cupiditate, ipsam tempora et maiores minima 
+          </p>
+        </div>
+      </div>
+    </section>
 
-<h2>Work</h2>
-
-<div class="row">
-  <div class="column">
-    <img src="img_5terre.jpg" alt="Snow" style="width:50%">
-  </div>
-  <div class="column">
-    <img src="img_5terre.jpg" alt="Forest" style="width:50%">
-  </div>
-  <div class="column">
-    <img src="img_5terre.jpg" alt="Mountains" style="width:50%">
-  </div>
-</div>
-
-
-
-
-
-<!-- <div style="padding-left:16px">
-  <h2>Top Navigation with Right Aligned Links</h2>
-  <p>Some content..</p>
-</div> -->
-
+    <section class="work">
+      <div class="float-container">
+        <div class="float-child">
+          <h1 class="side">Work</h1>
+        </div>
+      </div>
+    
+    <!--Work grid boxes-->
+    
+      <div class="grid-container float-child">
+        <div class="grid-item">MERN Stack</div>
+        <div class="grid-item">MERN Stack</div>
+        <div class="grid-item">NODE/IoT</div>
+        <div class="grid-item">React/JavaScript</div>
+        <div class="grid-item">HTML/CSS</div>
+      </div>
+    
+    </section>
+    
 </body>
 </html>
